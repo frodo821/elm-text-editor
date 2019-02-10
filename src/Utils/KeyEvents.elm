@@ -1,17 +1,11 @@
 module Utils.KeyEvents exposing (..)
 
 import Mvu.Model exposing (Msg(..), Model, CustomKeyCode)
-{--
-import Debug
----}
 
 type KeyStat = Key String Bool Bool Bool Bool
 
 toKeyStat : CustomKeyCode -> KeyStat
 toKeyStat key =
-{--
-    Debug.log "KeyStat" <|
----}
     Key key.key key.shift key.ctrl key.alt key.meta
 
 dispatchKeyEvent : CustomKeyCode -> Model -> (Msg -> Model -> (Model, Cmd Msg)) -> (Model, Cmd Msg)

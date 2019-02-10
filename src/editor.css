@@ -5,7 +5,6 @@
     width: 100%;
     height: 100vh;
     margin-top: 2rem;
-    background: #1f1f2a;
     color: #ffffae;
 }
 
@@ -38,6 +37,8 @@
     position: relative;
     cursor: pointer;
     user-select: none;
+    min-height: 2rem;
+    word-break: keep-all;
 }
 
 .tabs .tab.active {

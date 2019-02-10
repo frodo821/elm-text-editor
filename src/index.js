@@ -38,7 +38,6 @@ window.addEventListener('keydown', function(ev) {
         alt: ev.altKey,
         meta: ev.metaKey
     };
-    console.log(data);
     if(!(ev.ctrlKey || ev.altKey || ev.metaKey))
         return;
     if(ignore_events.includes(JSON.stringify(data)))
