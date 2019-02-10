@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "types": ["node"],
+        "sourceMap": true,
+        "outDir": "./build/tso"
+    },
+    "include": ["src/**/*"]
+}

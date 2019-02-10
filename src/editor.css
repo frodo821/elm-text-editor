@@ -1,0 +1,104 @@
+.app-root {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 0.2rem;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+    background: #1f1f2a;
+    color: #ffffae;
+}
+
+.filename {
+    font: inherit;
+    text-align: center;
+    width: calc(100% - 8rem);
+    border: none;
+    border-bottom: dashed 4px #f0f023;
+    color: inherit;
+    background: inherit;
+}
+
+.tabs {
+    background: #2c2c4c;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 2rem);
+    height: 2rem;
+    vertical-align: middle;
+    padding: 0 1rem;
+}
+
+.tabs .tab {
+    width: min-content;
+    padding: 0.4rem;
+    padding-right: 1.4rem;
+    float: left;
+    margin-left: 0.3rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tabs .tab.active {
+    background: #1f1f2a;
+}
+
+.editor {
+    padding: 0.5rem;
+    margin: 1rem;
+    width: calc(100% - 4rem);
+    appearance: none;
+    border: none;
+    background: #2f2f4a;
+    color: inherit;
+    font: inherit;
+    height: calc(100% - 8rem);
+}
+
+.tabs .tab:hover .close-tab,
+.tabs .tab.active .close-tab {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.5rem;
+    transform-origin: center;
+    transform: scale(0.8);
+}
+
+.tabs .tab:hover .close-tab :nth-child(-n+2),
+.tabs .tab.active .close-tab :nth-child(-n+2) {
+    width: 1rem;
+    height: 0.1rem;
+    background: white;
+    position: absolute;
+    top: 0.45rem;
+    transform-origin: center;
+}
+
+.tabs .tab:hover .close-tab :first-child,
+.tabs .tab.active .close-tab :first-child {
+    transform-origin: center;
+    transform: rotateZ(45deg);
+}
+
+.tabs .tab:hover .close-tab :nth-child(2),
+.tabs .tab.active .close-tab :nth-child(2) {
+    transform: rotateZ(315deg);
+}
+
+.dialog-body .file {
+    border-bottom: solid 1px gray;
+    margin-top: 0.4rem;
+    transition: 100ms;
+    user-select: none;
+    cursor: pointer;
+}
+
+.dialog-body .file:hover {
+    background: #8f8ffa;
+    color: #303040;
+}
