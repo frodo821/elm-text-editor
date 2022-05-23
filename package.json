@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^10.12.21",
-    "dexie": "^2.0.4"
+    "dexie": "^3.2.2"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
